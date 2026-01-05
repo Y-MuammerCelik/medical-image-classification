@@ -1,0 +1,24 @@
+# Knee Osteoarthritis Classification - Gereksinimler
+# Python 3.8+ gerektirir
+
+# PyTorch (GPU destekli kurulum için: https://pytorch.org/get-started/locally/)
+torch>=1.9.0
+torchvision>=0.10.0
+
+# Veri işleme
+numpy>=1.20.0
+pillow>=8.0.0
+
+# Görselleştirme
+matplotlib>=3.4.0
+seaborn>=0.11.0
+
+# Makine öğrenmesi metrikleri
+scikit-learn>=0.24.0
+
+# İlerleme çubuğu
+tqdm>=4.60.0
+
+# Opsiyonel: Jupyter notebook desteği
+# jupyter>=1.0.0
+# ipywidgets>=7.6.0
