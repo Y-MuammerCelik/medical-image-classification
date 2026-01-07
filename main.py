@@ -76,8 +76,8 @@ def parse_args():
                         help='L2 regularization (varsayılan: 1e-4)')
     parser.add_argument('--early_stopping', type=int, default=5,
                         help='Early stopping patience (varsayılan: 5)')
-    parser.add_argument('--class_weights', action='store_true',
-                        help='Dengesiz sınıflar için ağırlık kullan')
+    parser.add_argument('--class_weights', action='store_true', default=True,
+                        help='Dengesiz sınıflar için ağırlık kullan (varsayılan: True)')
     
     # Diğer parametreler
     parser.add_argument('--seed', type=int, default=42,
