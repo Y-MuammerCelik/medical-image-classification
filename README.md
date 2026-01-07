@@ -29,6 +29,31 @@ Diz röntgen görüntülerinden osteoartrit evrelemesi yapan CNN modeli.
 
 ## 📊 Sonuçlar
 
+### Model Performansı
+
+| Grade | Durum | Doğruluk |
+|:-----:|-------|:--------:|
+| 0 | Normal | **%70** |
+| 1 | Şüpheli | %55 |
+| 2 | Minimal | %45 |
+| 3 | Orta | **%72** |
+| 4 | Şiddetli | **%83** |
+
+> 📈 **Ortalama Doğruluk: %65**
+
+### 💡 Değerlendirme
+
+Model genel olarak iyi bir performans sergilemektedir:
+
+- ✅ **Şiddetli osteoartrit (Grade 4):** %83 doğruluk - En yüksek başarı
+- ✅ **Orta derece (Grade 3):** %72 doğruluk - Yüksek başarı
+- ✅ **Normal dizler (Grade 0):** %70 doğruluk - Başarılı tanıma
+- ⚠️ **Grade 1 ve Grade 2:** Nispeten düşük performans (%55 ve %45)
+
+> **Not:** Ara seviyelerdeki düşük performans, bu sınıfların radyolojik bulgularının ince farklılıklar içermesinden kaynaklanmaktadır. Genel olarak %65 ortalama doğruluk, 5 sınıflı tıbbi görüntü sınıflandırması için kabul edilebilir bir başarı oranıdır.
+
+---
+
 ### Karışıklık Matrisi (Normalized)
 
 ![Confusion Matrix](images/confusion_matrix_normalized.jpg)
